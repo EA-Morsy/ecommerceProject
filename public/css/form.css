@@ -1,0 +1,151 @@
+
+ @import url('https://fonts.googleapis.com/css?family=Numans');
+ .navbar
+ {
+     position: fixed !important;
+     float: right;
+     width:100%;
+     background-color: #122839 !important;
+     /* z-index: 2; */
+ }
+ .nav-link ,.navbar-brand
+{
+    color:#122839 ;
+}
+ html,body{
+  background-image: url("./imgs/maxresdefault.jpg");
+  /* background-image: url("./imgs/background.jpg"); */
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100%;
+ font-family:sans-serif;
+ background-attachment: fixed;
+ background-color: #FAF3EB;
+ }
+ 
+ .container{
+ height: 100%;
+ align-content: center;
+ }
+ 
+ #card ,.card,.caard
+ {
+ height: auto ;
+ margin-top: 130px !important;
+ margin-bottom: auto;
+ margin-left: 17px;
+ width: 400px;
+ background-color: rgba(6, 29, 48,.95) !important;
+ }
+ 
+ .social_icon span{
+ font-size: 60px;
+ margin-left: 10px;
+ color: rgb(18, 141, 255);
+ }
+ 
+ .social_icon span:hover{
+ color: white;
+ cursor: pointer;
+ }
+ 
+ .card-header h3{
+ color: white;
+ text-align: center;
+ }
+ 
+ .social_icon{
+ position: absolute;
+ right: 20px;
+ top: -45px;
+ }
+ 
+ .input-group-prepend span{
+ width: 50px;
+ background-color: #FFC312;
+ color: black;
+ border:0 !important;
+ }
+ 
+ input:focus{
+ outline: 0 0 0 0  !important;
+ box-shadow: 0 0 0 0 !important;
+ 
+ }
+ 
+ .remember{
+ color: white;
+ }
+ 
+ .remember input
+ {
+ width: 20px;
+ height: 20px;
+ margin-left: 15px;
+ margin-right: 5px;
+ }
+ 
+ .login_btn{
+ color: black;
+ font-weight: 500!important;
+ background-color: white!important;
+ width: 150px;
+ }
+ 
+ .login_btn:hover{
+ color: black!important;
+ background-color: #FFC312 !important;
+ }
+ 
+ .links{
+ color: white;
+ }
+ .signup_link:hover
+ {
+ color: #FFC312 !important;
+ text-decoration: none!important;
+ }
+ .insert_btn
+ {
+     width: 100px;
+     font-weight:500 !important;
+     background-color: #FFC312 !important;
+     
+   
+ }
+ .insert_btn:hover
+ {
+     background-color:white !important;
+     color:black !important;
+ }
+ 
+ .fas{
+     color: #3A5363;
+ }
+
+.forma
+{
+    width: 600px !important;
+}
+
+.username
+{
+  margin-left: 670px !important;
+  margin-top: 10px;
+  width: fit-content;
+}
+a.nav-link , a.navbar-brand
+{
+  margin-top: 7px;
+  width: max-content;
+
+}
+.form-control
+{
+    margin-bottom: 10px;
+}
+label
+{
+    color: white;
+    
+}

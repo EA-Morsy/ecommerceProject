@@ -1,0 +1,148 @@
+
+html{
+    background-color:#FAF3EB;
+    font-family: 'Play', sans-serif !important;
+
+}
+.page-body
+{
+    background-color:#FAF3EB !important;
+}
+.head-slides
+{
+    width: 98%;
+    margin:0 auto;
+    height:200px;
+}
+.navbarr
+{
+    background-color: whitesmoke;
+    width: 98%;
+    margin: 0 auto;
+    height: 50px;
+    box-shadow: grey 10px 10px 10px;
+   
+    z-index: 2;
+}
+.disc
+{
+    font-weight: 800;
+    background-color: whitesmoke;
+    height: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+.aboutus
+{
+    text-align: center;
+}
+.second-part
+{
+    border: 1px black solid;
+    height: fit-content;
+    width: 70%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+
+
+
+.my-card
+{
+    max-width: 73% !important;
+    margin: 0 auto;
+    height: 270px;
+    background-color: whitesmoke !important;
+   
+}
+
+.my-body
+{
+    margin-top: 50px !important;
+    margin-left: 70px !important;
+}
+
+.nav-item a{
+    list-style: none;
+    color: black;
+    font-weight: 700;
+    margin-top: 10px;
+}
+/* img
+{
+    border-radius: 5%;
+} */
+
+.item-card
+{
+    width: 30%; margin:10px;
+    box-shadow: grey 10px 10px 10px;
+    background-color: whitesmoke;
+}
+
+.item-card:hover
+{
+   box-shadow:#796AA6 10px  10px 10px ;
+}
+.item-card:hover .view
+{
+      display: block;
+
+}
+
+.card-text
+{
+    color: green;
+}
+.card-img-top
+{
+    padding-top: 5px;
+    border-radius: 7%;
+}
+.view
+{
+    margin-bottom: 5px !important;
+    display: none;
+}
+.image
+{
+    width: 500px;
+    height:450px;
+}
+
+.info
+{
+  
+    width: 90%;
+    color: black;
+}
+
+.even
+{
+    width: fit-content;
+    height: fit-content;
+}
+
+.boody *
+{
+    margin-bottom: 10px;
+    
+}
+.boody
+{
+    width: 100%;
+    float: right;
+    margin-right: -50px !important;
+    margin: 0 auto;
+}
+.caard
+{
+    width: 70%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+.buy-now , .buy-now:hover
+{
+    background-color: darkslategray;
+}
