@@ -15,8 +15,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::redirect('/','/en');
-Route::group(['prefix'=>'{language}'],function(){
+
 
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
@@ -25,12 +24,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/home', function () {
     return view('home');
 });
-Route::redirect('/','/en');
+// Route::redirect('/','/en');
 Route::get('/' ,function()
 {
     return view('welcome');
 });
-
+Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+{
 /*Admin routes */
 Route::post('/addProduct','ProductController@addProduct'); 
 Route::get('/addProduct','ProductController@addProductView');
@@ -47,9 +47,5 @@ Route::post('/create','userController@add');
 Route::get('/show','ProductController@listProduct');
 
 // Route::put('/updateProduct/{id}','ProductController@updateProduct');
-Route::get('/soaps' , 'ProductController@viewAllSoaps');
-Route::get('/viewSoap/{id}', 'ProductController@findSoap');
-Route::get('/candles','ProductController@viewAllCandles');
-Route::get('/viewCandle/{id}', 'ProductController@findCandle');
 
 });

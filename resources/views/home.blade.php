@@ -63,7 +63,7 @@
         <h3 class="card-title">Probiotic cleansing bars</h3>
         <p class="card-text">HANDCRAFTED ORGANIC SOAPS & CANDLES </p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <a type="button" class="btn btn-outline-dark" href="/api/soaps">SHOP SOAPS</a>
+        <a type="button" class="btn btn-outline-dark" href="/soaps">SHOP SOAPS</a>
       </div>
     </div>
   </div>
@@ -79,11 +79,11 @@
         <h3 class="card-title">Nature's essence Scented Candles</h3>
         <p class="card-text">HANDCRAFTED ORGANIC SOAPS & CANDLES </p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <a type="button" class="btn btn-outline-dark" href="/api/candles">SHOP CANDLES</a>
+        <a type="button" class="btn btn-outline-dark" href="/candles">SHOP CANDLES</a>
       </div>
     </div>
     <div class="col-md-5">
-      <img src="{{url('/imgs/candle2.jpg')}}" width="400px" height="267px" alt="...">
+      <img src="{{url('/imgs/candle2.jpg')}}" style="margin-left: 60px;" width="400px" height="267px" alt="...">
     </div>
    
   </div>

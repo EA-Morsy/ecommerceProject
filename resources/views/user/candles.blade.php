@@ -27,7 +27,7 @@
     <h6 class="card-title" style="text-transform: capitalize;">{{$candle['name']}}</h6>
     <p class="card-text">${{$candle['price']}} </p>
     <input type="number" class="form-control"width="100%" min="1" style="text-align: center;" value="1" ><br>
-    <a href="/api/viewCandle/{{$candle['id']}}" style="width: 100%; margin:0 auto" class="btn btn-success view">VIEW</a>
+    <a href="/viewCandle/{{$candle['id']}}" style="width: 100%; margin:0 auto" class="btn btn-success view">VIEW</a>
     <a href="#" style="width: 100%; margin:0 auto" class="btn btn-dark">ADD TO CARD</a>
   </div>
 </div>

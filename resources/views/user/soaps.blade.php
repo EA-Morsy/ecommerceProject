@@ -24,7 +24,7 @@
     <h6 class="card-title" style="text-transform: capitalize;">{{$s['name']}}</h6>
     <p class="card-text">${{$s['price']}} </p>
     <input type="number" class="form-control"width="100%" min="1" style="text-align: center;" value="1" ><br>
-    <a href="/api/viewSoap/{{$s['id']}}" style="width: 100%; margin:0 auto" class="btn btn-success view">VIEW</a>
+    <a href="/viewSoap/{{$s['id']}}" style="width: 100%; margin:0 auto" class="btn btn-success view">VIEW</a>
     <a href="#" style="width: 100%; margin:0 auto" class="btn btn-dark">ADD TO CARD</a>
   </div>
 </div>

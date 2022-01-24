@@ -10,23 +10,23 @@ Dashboard
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title"> Simple Table</h4>
+                <h4 class="card-title"> {{__('messages.Simple Table')}}</h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table">
                     <thead class=" text-primary">
                       <th>
-                        Name
+                        {{__('messages.Name')}}
                       </th>
                       <th>
-                        Country
+                        {{__('messages.Country')}}
                       </th>
                       <th>
-                        City
+                        {{__('messages.City')}}
                       </th>
                       <th class="text-right">
-                        Salary
+                        {{__('messages.Salary')}}
                       </th>
                     </thead>
                     <tbody>

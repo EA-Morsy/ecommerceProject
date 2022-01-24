@@ -7,8 +7,8 @@
 <div class="row my-5 content" style="width: 80%; margin: 0 auto;">
 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/api/home">Home</a></li>
-    <li class="breadcrumb-item"><a href="/api/candles">Shop Candles</a></li>
+    <li class="breadcrumb-item"><a href="/home">Home</a></li>
+    <li class="breadcrumb-item"><a href="/candles">Shop Candles</a></li>
     <li class="breadcrumb-item active" aria-current="page">{{$candle->name}}</li>
   </ol>
 </nav>
@@ -26,8 +26,8 @@
         <p class="card-text"><small class="text-muted">${{$candle->price}}</small></p>
         <label for="quant">Quantity</label><br>
         <input type="number" id="quant" width="30% !important;" min="1" style="text-align: center;" value="1" ><br>
-        <a type="button" class="btn btn-dark buy-now " href="/api/soaps">BUY NOW</a>
-        <a type="button" class="btn btn-dark " href="/api/soaps">ADD TO CARD</a>
+        <a type="button" class="btn btn-dark buy-now " href="/candles">BUY NOW</a>
+        <a type="button" class="btn btn-dark " href="/candles">ADD TO CARD</a>
         <p class="card-text info">PRODUCT INFO </p>
         <p class="card-text info">{{$candle->desc}} </p>
        

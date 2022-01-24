@@ -86,7 +86,7 @@ class ProductController extends Controller
         $data['pic'] = $target;
         (move_uploaded_file($tmp_dir, $target));
          $product=Products::create($data);
-        return view('home');
+        return view('admin.dashboard');
     }
         /**************UPDATE**************/ 
     function updateProductView($id)

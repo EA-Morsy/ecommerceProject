@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
   <meta charset="utf-8" />
@@ -31,10 +31,10 @@
     -->
       <div class="logo">
         <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-          CT
+          
         </a>
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+          
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
@@ -42,13 +42,13 @@
           <li>
             <a href="./dashboard.html">
               <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
+              <p>{{__('messages.Dashboard')}}</p>
             </a>
           </li>
           <li>
             <a href="/api/viewAllProducts">
               <i class="now-ui-icons education_atom"></i>
-              <p>List Products</p>
+              <p>{{__('messages.List Products')}}</p>
             </a>
           </li>
           <!-- <li>
@@ -60,19 +60,19 @@
           <li>
             <a href="/api/addProduct">
               <i class="now-ui-icons location_map-big"></i>
-              <p>Add Products</p>
+              <p>{{__('messages.Add Product')}}</p>
             </a>
           </li>
           <li>
             <a href="./notifications.html">
               <i class="now-ui-icons ui-1_bell-53"></i>
-              <p>Notifications</p>
+              <p>{{__('messages.Notifications')}}</p>
             </a>
           </li>
           <li>
             <a href="./user.html">
               <i class="now-ui-icons users_single-02"></i>
-              <p>User Profile</p>
+              <p>{{__('messages.User Profile')}}</p>
             </a>
           </li>
           <li class="active ">
@@ -84,7 +84,7 @@
           <li>
             <a href="./typography.html">
               <i class="now-ui-icons text_caps-small"></i>
-              <p>Typography</p>
+              <p>{{__('messages.Typography')}}</p>
             </a>
           </li>
           <li class="active-pro">
@@ -143,9 +143,9 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="{{ LaravelLocalization::getLocalizedURL('en') }}">EN</a>
+                  <a class="dropdown-item" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">AR</a>
+                  
                 </div>
               </li>
               <li class="nav-item">

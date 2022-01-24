@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{app()->getlocale()=='ar'?'rtl':'ltr'}}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,17 +65,22 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+        <a class="btn btn-danger" > {{app()->getLocale()}}</a>
             @if (Route::has('login'))
                 <div class="top-right links">
+                    @guest
+                    <a href="{{LaravelLocalization::getLocalizedURL('en')}}">{{__('messages.EN')}}</a>
+                        <a href="{{LaravelLocalization::getLocalizedURL('ar')}}">{{__('messages.AR')}}</a>
+                        @endguest
                     @auth
-                        <a href="{{ url('/api/home') }}">Home</a>
-                        <a href="#">{{__('EN')}}</a>
-                        <a href="#">{{__('AR')}}</a>
+                        <a href="{{ url('/home') }}">{{__('messages.Home')}}</a>
+                        <a href="{{LaravelLocalization::getLocalizedURL('en')}}">{{__('messages.EN')}}</a>
+                        <a href="{{LaravelLocalization::getLocalizedURL('ar')}}">{{__('messages.AR')}}</a>
                     @else
-                        <a href="{{ route('login' , app()->getLocale())}}">{{__('Login')}}</a>
+                        <a href="{{ route('login')}}">{{__('messages.Login')}}</a>
                         
                         @if (Route::has('register'))
-                            <a href="{{ route('register' , app()->getLocale()) }}">{{__('Register')}}</a>
+                            <a href="{{ route('register') }}">{{__('messages.Register')}}</a>
                         @endif
                     @endauth
                 </div>
@@ -83,11 +88,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                   {{__( 'Welcome To My Project')}}
+                   {{__( 'messages.Welcome To My Project')}}
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">{{__('Docs')}}</a>
+                    <a href="https://laravel.com/docs">{{__('messages.Docs')}}</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>

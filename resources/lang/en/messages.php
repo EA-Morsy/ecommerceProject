@@ -1,0 +1,26 @@
+<?php
+return[
+"Login"=>"Login",
+"Register"=>"Register",
+"Add Product"=>"Add Product",
+"List Products"=>"List Products",
+'Logout'=>'Logout',
+'E-Mail Address'=>'E-Mail Address',
+'Password'=>'Password',
+'Confirm Password'=>'Confirm Password',
+'Remember Me'=>'Remember Me',
+'EN'=>'EN',
+'AR'=>'AR',
+'Docs'=>'Docs',
+'Welcome To My Project'=>'Welcome To My Project',
+'Home'=>'Home',
+"Dashboard"=>"Dashboard",
+"Notifications"=>'Notifications',
+'User Profile'=>'User Profile',
+'Country'=>'Country',
+'City'=>'City',
+'Salary'=>'Salary',
+'Simple Table'=>'Simple Table',
+'Typography'=>'Typography',
+
+];
