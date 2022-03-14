@@ -37,8 +37,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     
 
     Route::get('/soaps' , 'ProductController@viewAllSoaps');
-Route::get('/viewSoap/{id}', 'ProductController@findSoap');
-Route::get('/candles','ProductController@viewAllCandles');
-Route::get('/viewCandle/{id}', 'ProductController@findCandle');
+    Route::get('/viewSoap/{id}', 'ProductController@findSoap');
+    Route::get('/candles','ProductController@viewAllCandles');
+    Route::get('/viewCandle/{id}', 'ProductController@findCandle');
 
 });
