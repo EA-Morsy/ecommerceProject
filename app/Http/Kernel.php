@@ -65,6 +65,7 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'authenticated' => \App\Http\Middleware\AuthenticatedMiddleware::class,
+        'adminAuth' => \App\Http\Middleware\AdminMiddleware::class,
         'lang'          =>  \App\Http\Middleware\SetLanguage::class,
         'localize'                => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
         'localizationRedirect'    => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,

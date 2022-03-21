@@ -21,11 +21,11 @@
                     @method('put')
                     <label>category</label><br>
                     <div class="input-group form-group">
-                        <select name="categoryID" id="category" class="form-control">
-                            <option value="{{$product->categoryID}}" selected disabled hidden>{{$curr->name}}</option>
+                        <select name="category_id" id="category" class="form-control">
+                            <option value="{{$product->category_id}}" selected disabled hidden>{{$product->category->name}}</option>
 
                             @foreach($category as $category)
-                            <option value="{{$category['id']}}" name='categoryID'>{{$category['name']}}</option>
+                            <option value="{{$category->id}}" name='category_id'>{{$category['name']}}</option>
                             @endforeach
                         </select>
                     </div>

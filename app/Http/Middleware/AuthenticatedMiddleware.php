@@ -15,6 +15,7 @@ class AuthenticatedMiddleware
      */
     public function handle($request, Closure $next)
     {
+        
         if(Auth::check())
         return $next($request);
         return redirect('/home');

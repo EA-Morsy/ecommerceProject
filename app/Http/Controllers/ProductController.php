@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Products;
 use App\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
 class ProductController extends Controller
@@ -33,7 +34,7 @@ class ProductController extends Controller
     // S O A P S 
     function viewAllSoaps()
     {
-        $soaps = Products::where('categoryID', '=', 1)->get();
+        $soaps = Products::where('category_id', '=', 1)->get();
         return view('user.soaps')->with('soaps', $soaps);
     }
     function findSoap($id)
@@ -53,7 +54,7 @@ class ProductController extends Controller
 
     function viewAllCandles()
     {
-        $candles = Products::where('categoryID', '=', 2)->get();
+        $candles = Products::where('category_id', '=', 2)->get();
         return view('user.candles')->with('candles', $candles);
     }
 
@@ -76,7 +77,8 @@ class ProductController extends Controller
     {
         $data = request()->except(['submit']);
         
-       
+        $user=Auth::id();
+        $data['user_id']=$user;
         $img_profile = $_FILES['pic']['name'];
         $tmp_dir = $_FILES['pic']['tmp_name'];
         $curr_date = date('dMy');
@@ -92,8 +94,8 @@ class ProductController extends Controller
     function updateProductView($id)
     {
         $product=Products::find($id);
-        $category=Category::all();
-        $curr=Category::findOrFail($product->categoryID);
+        $category=Category::get();
+        $curr=Category::where('id',$product->category_id)->first();
         return view('admin.updateProduct')->with('product',$product)->with('category',$category)->with('curr',$curr);
     }
     

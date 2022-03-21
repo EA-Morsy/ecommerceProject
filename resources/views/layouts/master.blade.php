@@ -46,19 +46,19 @@
             </a>
           </li>
           <li>
-            <a href="/api/viewAllProducts">
+            <a href="/viewAllProducts">
               <i class="now-ui-icons education_atom"></i>
               <p>{{__('messages.List Products')}}</p>
             </a>
           </li>
-          <!-- <li>
-            <a href="./map.html">
+           <li>
+            <a href="/addCategory">
               <i class="now-ui-icons location_map-big"></i>
-              <p>Maps</p>
+              <p>{{ __('messages.Add Category') }}</p>
             </a>
-          </li> -->
+          </li> 
           <li>
-            <a href="/api/addProduct">
+            <a href="/addProduct">
               <i class="now-ui-icons location_map-big"></i>
               <p>{{__('messages.Add Product')}}</p>
             </a>
@@ -148,6 +148,22 @@
                   
                 </div>
               </li>
+              <li class="nav-item dropdown">
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    {{ Auth::user()->name }}
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ route('adminLogout') }}" onclick="event.preventDefault();
+                                         document.getElementById('logout-form').submit();">
+                        {{ __('messages.Logout') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('adminLogout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </div>
+            </li>
               <li class="nav-item">
                 <a class="nav-link" href="#pablo">
                   <i class="now-ui-icons users_single-02"></i>

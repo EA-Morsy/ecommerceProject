@@ -21,31 +21,4 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('/home', function () {
-    return view('home');
-});
-// Route::redirect('/','/en');
-Route::get('/' ,function()
-{
-    return view('welcome');
-});
-Route::group(['prefix' => LaravelLocalization::setLocale()], function()
-{
-/*Admin routes */
-Route::post('/addProduct','ProductController@addProduct'); 
-Route::get('/addProduct','ProductController@addProductView');
-Route::get('/viewAllProducts','ProductController@viewAllProducts');
-Route::get('/deleteProduct/{id}','ProductController@deleteProduct');
-Route::get('/view/{id}','ProductController@viewProduct');
-Route::get('/updateProduct/{id}','ProductController@updateProductView');
-Route::get('/updateProduct/{id}','ProductController@updateProductView');
-Route::put('/updateProduct/{id}','ProductController@updateProduct');
 
-/************************User Routes*****************************/ 
-Route::get('/list/{id}','userController@list');
-Route::post('/create','userController@add');
-Route::get('/show','ProductController@listProduct');
-
-// Route::put('/updateProduct/{id}','ProductController@updateProduct');
-
-});

@@ -1,8 +1,10 @@
 <?php
 return[
+    "Name"=>"Name",
 "Login"=>"Login",
 "Register"=>"Register",
 "Add Product"=>"Add Product",
+"Add Category"=>"Add Category",
 "List Products"=>"List Products",
 'Logout'=>'Logout',
 'E-Mail Address'=>'E-Mail Address',

@@ -51,11 +51,12 @@
               <p>List Products</p>
             </a>
           </li>
+          
           @guest
           <li>
-            <a href="./map.html">
+            <a href="/api/addCategory">
               <i class="now-ui-icons location_map-big"></i>
-              <p>Maps</p>
+              <p>Add Category</p>
             </a>
           </li>
           @endauth          
@@ -67,9 +68,9 @@
           </li>
           
           <li>
-            <a href="./notifications.html">
+            <a href="/api/addCategory">
               <i class="now-ui-icons ui-1_bell-53"></i>
-              <p>Notifications</p>
+              <p>Add Category</p>
             </a>
           </li>
           <li>

@@ -19,14 +19,14 @@
 				<form method="POST" enctype="multipart/form-data" >
 					@csrf
 					
-					<label for="categoryID" class="form">Select category:</label>
+					<label for="category_id" class="form">Select category:</label>
 
 					<div class="input-group form-group">
 						
 						
-						<select name="categoryID" id="category" class="form-control">
+						<select name="category_id" id="category" class="form-control">
 						@foreach($category as $category)
-							<option value="{{$category['id']}}" name='categoryID'>{{$category['name']}}</option>
+							<option value="{{$category->id}}" name='category_id'>{{$category['name']}}</option>
 						@endforeach
 						</select>
 
